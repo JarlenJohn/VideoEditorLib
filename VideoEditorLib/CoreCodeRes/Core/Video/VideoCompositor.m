@@ -78,6 +78,7 @@ static CIContext *ciContext;
                 CVPixelBufferRef resultPixels = [strongSelf newRenderedPixelBufferForRequest:request];
                 if (resultPixels) {
                     [request finishWithComposedVideoFrame:resultPixels];
+                    CVPixelBufferRelease(resultPixels);
                 } else {
                     NSError *error = [NSError errorWithDomain:@"com.Digiarty.videoEditor" code:0 userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"Composition request new pixel buffer failed.", nil)}];
                     [request finishWithError:error];
