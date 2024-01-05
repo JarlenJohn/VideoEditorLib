@@ -1,7 +1,10 @@
 # VideoEditorLib
-Video editing framework based on AVFoundation.
+Simple video editing framework based on AVFoundation. include as follow:
+![keypoint](assets/keypoint.png)
+
+
 
 this project rewrite from:
-Cabbage: https://github.com/VideoFlint/Cabbage
+swift version of Cabbage: https://github.com/VideoFlint/Cabbage
 
 thanks!
